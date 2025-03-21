@@ -32,3 +32,4 @@ C:\c# Api Ornekleri\weather_api\WeatherApi\obj\Debug\net8.0\refint\WeatherApi.dl
 C:\c# Api Ornekleri\weather_api\WeatherApi\obj\Debug\net8.0\WeatherApi.pdb
 C:\c# Api Ornekleri\weather_api\WeatherApi\obj\Debug\net8.0\WeatherApi.genruntimeconfig.cache
 C:\c# Api Ornekleri\weather_api\WeatherApi\obj\Debug\net8.0\ref\WeatherApi.dll
+C:\c# Api Ornekleri\weather_api\WeatherApi\obj\Debug\net8.0\WeatherApi.sourcelink.json

@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // ✅ OpenWeather config'i appsettings.json'dan çekip DI container'a ekliyoruz
 builder.Services.Configure<OpenWeatherConfig>(builder.Configuration.GetSection("OpenWeather"));
 
+builder.Services.Configure<CitiesConfig>(builder.Configuration.GetSection("TürkiyeAPI"));
+
+
 // DI (Dependency Injection) servisleri
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -16,6 +19,7 @@ builder.Services.AddSwaggerGen();
 // ✅ Weather API servisini ve HttpClient'ı ekliyoruz
 builder.Services.AddHttpClient<IWeatherService, WeatherRepository>();
 builder.Services.AddHttpClient<IForecastService, ForecastRepository>();
+builder.Services.AddHttpClient<ICityService ,CitiesRepository>();
 
 var app = builder.Build();
 
